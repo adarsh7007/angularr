@@ -22,7 +22,7 @@ export class NoteService {
 
   add(note: Note) {
     // this method will add a note to the notes array
-    return this.apsService.post('/note', note);
+    return this.apsService.post('/:userId/note', note);
   }
 
   update(note: Note) {
