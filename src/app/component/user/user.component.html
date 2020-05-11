@@ -1,0 +1,21 @@
+<div class="header">
+
+  <div class="header-right">
+
+      <!-- Form -->
+      <div class="header-right">
+        <h3>add note</h3>
+          <form [formGroup]="noteForm" (ngSubmit)="submitForm()" novalidate>
+              <div class="form-group">
+                <fieldset>
+                  <label>name</label>
+                  <input type="text" formControlName="name" class="form-control" maxlength="20">
+                </fieldset>
+                </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+
+  </div>
+</div>
+
